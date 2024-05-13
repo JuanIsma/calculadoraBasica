@@ -1,0 +1,26 @@
+ 
+ 
+ 
+ .container{
+    
+    background-color: #1c1c1c; 
+    padding-block-start: 40px;
+    padding-block-end: 10cap;
+    margin-top:  98px;
+    border-radius: 16px;
+ }
+
+ .text-center{
+   color: aliceblue;
+ }
+
+ .form-control{
+   font-size: 30px;
+   font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: black;
+   border-color: black;
+   
+ }
+.btn {
+border-radius: 6px;
+ }

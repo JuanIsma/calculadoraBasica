@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Básica</title>
+         <!-- Enlaces a los archivos CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">    
+
+</head>
+    <body>
+        <div class="container">
+            <h2 class="text-center mb-4">Calculadora Básica</h2>
+            <input type="text" id="display" class="form-control mb-4" style="height: 60px;" readonly>
+            <div class="row">
+                <div class="col " style="height: 100px;   ">
+                    <button onclick="agregarNumero('1')" class="btn btn-primary btn-block " style="height: 90px;">1</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="agregarNumero('2')" class="btn btn-primary btn-block " style="height: 90px;">2</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="agregarNumero('3')" class="btn btn-primary btn-block " style="height: 90px;">3</button>
+                </div>
+                <div class="col ">
+                    <button onclick="agregarOperador('+')" class="btn btn-secondary btn-block " style="height: 90px;">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col " style="height: 100px;">
+                    <button onclick="agregarNumero('4')" class="btn btn-primary btn-block " style="height: 90px;">4</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="agregarNumero('5')" class="btn btn-primary btn-block " style="height: 90px;">5</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="agregarNumero('6')" class="btn btn-primary btn-block " style="height: 90px;">6</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="agregarOperador('-')" class="btn btn-secondary btn-block " style="height: 90px;">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col " style="height: 100px;">
+                    <button onclick="agregarNumero('7')" class="btn btn-primary btn-block " style="height: 90px;">7</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="agregarNumero('8')" class="btn btn-primary btn-block " style="height: 90px;">8</button>
+                </div>
+                <div class="col ">
+                    <button onclick="agregarNumero('9')" class="btn btn-primary btn-block " style="height: 90px;">9</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="agregarOperador('*')" class="btn btn-secondary btn-block  "
+                        style="height: 90px;">*</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col  ">
+                    <button onclick="agregarNumero('0')" class="btn btn-primary btn-block "  style="height: 90px;">0</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="borrar()" class="btn btn-danger btn-block  " style="height: 90px;">C</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="calcular()" class="btn btn-success btn-block  " style="height: 90px;">=</button>
+                </div>
+                <div class="col  ">
+                    <button onclick="agregarOperador('/')" class="btn btn-secondary btn-block " style="height: 90px;">/</button>
+                </div>
+            </div>
+        </div>
+        <!-- Enlace al archivo JavaScript de Bootstrap -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="calculadora.js"></script>
+       
+    </body>
+    </html>
